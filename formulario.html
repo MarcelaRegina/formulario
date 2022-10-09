@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" midiascreen>
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div class="campo">
+<h1 id="titulo"> Cadastro</h1>
+<p id="subtitulo"> complete suas informações </p>
+    </div>
+
+    <form>
+       <fieldset class="grupo">
+        <div class="campo">
+           <label for="nome"><strong> Nome</strong></label> 
+           <input type="text" name="nome" id="nome" required><br><br>
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome"> <strong>Sobrenome</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required><br><br>
+        </div>
+
+
+
+<div class="campo">
+    <label for="email"> <strong> E-mail</strong></label>
+    <input type="email" name="email" id="email" required><br><br>
+   
+</div>
+
+<div class="campo">
+    <label><strong>Telefone</strong>  </label>
+    <input type="tel" nome="telefone" id="telefone"><br><br>
+</div>
+
+<div class="campo">
+    <label> <strong> Upload de foto (PDF, DOC, DOCX, JPEG ou PNG)</strong> </label>
+    <input type="hidden" name="PDF" value="4194304" />
+
+<input type="file" />
+</div><br><br>
+
+<div class="campo">
+    <label><strong>De qual lado da aplicação você desenvolve </strong></label>
+    <label>
+        <input type="radio" name="devweb" value="frontent"> Front-end
+    </label>
+    <label>
+        <input type="radio" name="devweb" value="backend"> Back-end
+    </label>
+    <label>
+        <input type="radio" name="devweb" value="fullstack"> Fullstack
+    </label>
+</div><br><br>
+
+<div class="campo">
+    <label> <strong> Senioridade</strong></label>
+    <select id="senioriedade">
+    <option selected disabled value="">Selecione</option>
+    <option> Junior</option>
+    <option> pleno</option>
+    <option>senior</option>
+    </select>
+</div><br><br>
+
+
+<fieldset class="grupo">
+    <div class="campo">
+        <label><strong> selecione as línguas aplicada no serviço que você tem conhecimento </strong></label><br><br>
+        <input type="checkbox" nome="ingles" id="ingles" value="ingles">
+        <label for="ingles"> Inglês </label>
+        <input type="checkbox" nome="espanhol" id="espanhol" value="espanhol">
+        <label for="espanhol"> Espanhol </label>
+        <input type="checkbox" nome="tecnologia5" id="tecnologa5" value="outro">
+        <label for="tecnologia5"> outro </label>
+    </div>
+</fieldset>
+
+
+<fieldset class="grupo">
+    <div id="check">
+        <label><strong>selecione as tecnologias que você tem conhecimento </strong> </label><br><br>
+        <input type="checkbox" nome="tecnologia1" id="tecnologia1" value="HTML">
+        <label for="tecnologia1"> HTML</label>
+        <input type="checkbox" nome="tecnologia2" id="tecnologa2" value="CSS">
+        <label for="tecnologia2"> CSS </label>
+        <input type="checkbox" nome="tecnologia3" id="tecnologa3" value="Javascript">
+        <label for="tecnologia3"> Javascript </label>
+        <input type="checkbox" nome="tecnologia4" id="tecnologa4" value="Java">
+        <label for="tecnologia4"> Java </label>
+        <input type="checkbox" nome="tecnologia5" id="tecnologa5" value="outro">
+        <label for="tecnologia5"> outro </label>
+    </div>
+</fieldset><br><br>
+
+<div class="campo">
+    <label> <strong>Conte um pouco sobre a sua experiêcia </strong></label>
+    <textarea row="6" style="width:50em" name="experiencia" id="experiencia"></textarea>
+</div>
+<button type="submit"> concluído</button><br><br>
+
+<div class="campo">
+    <label> <strong>Indique o melhor horário sugerido para reuniões</strong> </label>
+    <input type="time" nome="horario" id="horario">
+</div>
+
+<div class="campo">
+    <label> <strong>Data prevista de entrega</strong> </label>
+    <input type="date" nome="Data" id="data"><br><br>
+</div>
+
+<button> Enviar formulário</button>
+    </form>
+       </fieldset>
+</body>
+</html>
